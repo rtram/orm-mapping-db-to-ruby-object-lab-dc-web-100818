@@ -17,7 +17,7 @@ class Student
       FROM students
       SQL
       
-    arr= DB[:conn].execute(sql)
+    arr = DB[:conn].execute(sql)
     arr.collect do |row|
       self.new_from_db(row)
     end 
