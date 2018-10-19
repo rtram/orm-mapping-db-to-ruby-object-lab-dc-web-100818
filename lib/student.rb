@@ -8,7 +8,7 @@ class Student
     pat.id = row[0]
     pat.name = row[1]
     pat.grade = row[2]
-    binding.pry
+    # binding.pry
   end
 
   def self.all
