@@ -17,8 +17,7 @@ class Student
       FROM students
       SQL
       
-    arr = DB[:conn].execute(sql)
-    arr.collect do |row|
+    DB[:conn].execute(sql).each do |row|
       self.new_from_db(row)
     end 
     binding.pry
