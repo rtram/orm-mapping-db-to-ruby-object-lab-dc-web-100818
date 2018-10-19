@@ -5,10 +5,10 @@ class Student
 
   def self.new_from_db(row)
     pat = Student.new 
-    # binding.pry
     pat.id = row[0]
     pat.name = row[1]
     pat.grade = row[2]
+    binding.pry
   end
 
   def self.all
