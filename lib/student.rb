@@ -5,7 +5,7 @@ class Student
 
   def self.new_from_db(row)
     student = Student.new 
-    binding.pry
+    # binding.pry
     student.id = row[0]
     student.name = row[1]
     student.grade = row[2]
