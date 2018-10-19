@@ -9,7 +9,6 @@ class Student
     pat.name = row[1]
     pat.grade = row[2]
     pat
-    # binding.pry
   end
 
   def self.all
