@@ -17,7 +17,7 @@ class Student
       FROM students
       SQL
       
-    DB[:conn].execute(sql)
+    arr = DB[:conn].execute(sql)
     
     binding.pry
     # retrieve all the rows from the "Students" database
